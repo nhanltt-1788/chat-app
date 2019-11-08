@@ -1,22 +1,57 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  font-family: "Calibri", "Roboto", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.error {
+  color: red;
+}
+/* dots jump */
+.dots-jump {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+  margin-right: 75px;
+  padding: 10px 0;
+  opacity: 1;
 }
 
-.App-link {
-  color: #09d3ac;
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #22303e;
+  display: inline-block;
+  border-radius: 50%;
+  right: 0px;
+  bottom: 0px;
+  margin: 0px 2.5px;
+  position: relative;
+  animation: jump 1s infinite;
+}
+
+.dots-jump .dot-1 {
+  -webkit-animation-delay: 100ms;
+  animation-delay: 100ms;
+}
+
+.dots-jump .dot-2 {
+  -webkit-animation-delay: 200ms;
+  animation-delay: 200ms;
+}
+
+.dots-jump .dot-3 {
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+
+@keyframes jump {
+  0%   {bottom: 0px;}
+  20%  {bottom: 10px;}
+  40%  {bottom: 0px;}
+}
+
+.online-user:hover {
+  cursor: pointer;
 }

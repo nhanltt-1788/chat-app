@@ -1,0 +1,28 @@
+{
+  "messageList": [
+  ],
+  "memberList": [
+    {
+      "userName": "Thanh Nhan",
+      "password": "register12A@",
+      "id": 1
+    },
+    {
+      "userName": "Thu Quynh",
+      "password": "register12A@",
+      "id": 2
+    }
+  ],
+  "userOnlineList": [
+    {
+      "userName": "Thanh Nhan",
+      "password": "register12A@",
+      "id": 1
+    },
+    {
+      "userName": "Thu Quynh",
+      "password": "register12A@",
+      "id": 2
+    }
+  ]
+}
